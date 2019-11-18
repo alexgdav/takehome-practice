@@ -1,24 +1,48 @@
 @import '~bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,900&display=swap');
 
 $button-color: #3273DC;
 $nav-color: #00D1B2;
-$nav-font: 'Pontano Sans', sans-serif;
+$main-font: 'Open Sans', Arial, sans-serif;
+$white: #fff;
 
 body {
+  font-family: $main-font;
   padding: 0;
+}
+
+h2 {
+  font-weight: 300;
 }
 
 .button-main {
   background-color: $button-color;
   border-radius: 0 3px 3px 0 !important;
-  color: white;
+  color: $white;
+}
+
+.card-header {
+  background-color: $white;
+  border: 0;
+}
+
+.card-text {
+  font-size: small;
+}
+
+.card-title {
+  font-family: $main-font;
+  font-weight: 900;
+}
+
+.col {
+  margin: auto -1em auto 0;
 }
 
 .navbar {
   background-color: $nav-color;
-  font-family: $nav-font;
-  padding: 0 0 0 1em;
+  font-family: $main-font;
+  padding: 0 0 0 .5em;
 
 }
 
@@ -26,6 +50,14 @@ body {
   font-size: small;
 }
 
+.row {
+  margin-bottom: 1em;
+}
+
 .search {
   margin: 3em auto;
+}
+
+.star {
+  color: $nav-color;
 }
